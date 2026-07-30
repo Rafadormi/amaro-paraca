@@ -7,7 +7,8 @@
 2. Crie o repositório privado `Rafadormi/amaro-paraca` no GitHub e conecte-o ao
    ICP com uma credencial de leitura de escopo mínimo.
 3. Configure a aplicação com Node.js 22, `npm ci`, `npm run build` e
-   `npm run start`, ou use o `Dockerfile` quando o painel oferecer build por
+   `npm run start`. O build já inclui os arquivos estáticos necessários para
+   o modo standalone. Use o `Dockerfile` somente quando o painel oferecer build por
    contêiner.
 4. Defina uma porta interna atribuída pelo ICP. A aplicação usa `PORT` e expõe
    o healthcheck `GET /api/health`.
